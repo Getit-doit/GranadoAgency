@@ -177,6 +177,28 @@ footer .legal .wrap { padding-top: 18px; padding-bottom: 18px; font-size: 13px; 
 .fineprint { max-width: 760px; margin: 0 auto 56px; font-size: 12px; line-height: 1.5; color: #8a8273; text-align: center; }
 .fineprint a { color: var(--clay); font-weight: 600; text-decoration: none; }
 
+/* LEGAL / CONTENT PAGES */
+.doc-hero { padding-top: 56px; padding-bottom: 8px; }
+.doc-hero .eyebrow { display: block; }
+.doc-hero h1 { font-family: 'Newsreader', serif; font-weight: 500; font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -0.02em; margin: 12px 0 0; }
+.doc { max-width: 760px; margin: 0 auto; padding: 24px 40px 72px; }
+.doc h2 { font-family: 'Newsreader', serif; font-weight: 600; font-size: 24px; color: var(--ink); margin: 38px 0 0; }
+.doc p, .doc li { font-size: 16px; line-height: 1.72; color: #463f33; }
+.doc p { margin: 12px 0 0; }
+.doc ul { margin: 12px 0 0; padding-left: 20px; }
+.doc li { margin: 6px 0; }
+.doc a { color: var(--clay); font-weight: 600; text-decoration: none; }
+.doc a:hover { text-decoration: underline; }
+.doc .meta { color: var(--soft); }
+.doc .backlinks { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 15px; }
+
+@media print {
+  nav, footer, .print-hidden { display: none !important; }
+  body { background: #fff; }
+  .doc { max-width: 100%; padding: 0; }
+  .doc h1, .doc h2 { page-break-after: avoid; }
+}
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .wrap { padding-left: 22px; padding-right: 22px; }
